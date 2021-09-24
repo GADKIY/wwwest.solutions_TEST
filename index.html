@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/lightslider.min.css">
     <link rel="stylesheet" href="assets/style/style.min.css">
     <title>Classer</title>
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white header__nav">
             <div class="container-fluid container-xl">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/Logo 4.png" alt="" width="30" height="24">
+                    <img class="header__logo" src="assets/images/Logo 4.png" alt="" width="30" height="24">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item header__link">
                             <a class="nav-link active" aria-current="page" href="#">Über Uns</a>
-                        </li>                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        </li>
+                        <li class="nav-item dropdown header__link">
+                            <a class="nav-link dropdown-toggle header__dropdown_item" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Produkte
+                                <span>&#709;</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -38,10 +41,11 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        <li class="nav-item dropdown header__link">
+                            <a class="nav-link dropdown-toggle header__dropdown_item" href="#" id="navbarDropdown2" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Peripherietechnik
+                                <span>&#709;</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -52,10 +56,11 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                        <li class="nav-item dropdown header__link">
+                            <a class="nav-link dropdown-toggle header__dropdown_item" href="#" id="navbarDropdown3" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Dienstleistungen
+                                <span>&#709;</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -66,13 +71,13 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header__link">
                             <a class="nav-link active" aria-current="page" href="#">Klimatechnik</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header__link">
                             <a class="nav-link active" aria-current="page" href="#">Kontakt</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item header__link">
                             <a class="nav-link active" aria-current="page" href="#">Presse</a>
                         </li>
                     </ul>
@@ -90,18 +95,24 @@
                             Kältemaschinen
                             & Kaltwassersätze
                         </h1>
-                        <p class="about__description">
-                            Aufgrund der kompakten Bauart werden platzsparende luftkondensierte
+                        <p class="about__description description about__description--visible">
+                            <strong>Aufgrund der kompakten Bauart werden platzsparende luftkondensierte
                             Kompressionskältemaschinen
                             (umgangsspr. „Kaltwassersätze“) vielseitig zur
-                            Prozesskühlung und Gebäudeklimatisierung eingesetzt.
+                            Prozesskühlung und Gebäudeklimatisierung eingesetzt.</strong>
                         </p>
                     </div>
                     <div class="about__content_inner-top--image col-lg-6 col-sm-12">
                         <img src="assets/images/AirColled.png" alt="Klimaanlage">
                     </div>
+                    <p class="about__description description about__description--hidden">
+                        <strong>Aufgrund der kompakten Bauart werden platzsparende luftkondensierte
+                            Kompressionskältemaschinen
+                            (umgangsspr. „Kaltwassersätze“) vielseitig zur
+                            Prozesskühlung und Gebäudeklimatisierung eingesetzt.</strong>
+                    </p>
                 </div>
-                <div class="about__content_wrap--bottom row">
+                <div class="about__content_wrap--bottom row justify-content-between">
                     <div class="about__content_inner-bottom--image col-lg-6 col-sm-12">
                         <img src="assets/images/Multistage.png" alt="Multistage">
                     </div>
@@ -130,19 +141,19 @@
                     <img src="assets/images/asv4sabu 3.png" alt="">
                 </div>
                 <div class="standards__text_wrap col-lg-8 col-sm-12 d-flex justify-content-center align-items-center">
-                    <div class="stantards__text_inner">
+                    <div class="standards__text_inner">
                         <h3 class="standards__title title">
                             MODERNSTE STANDARDS
                         </h3>
                         <p class="standards__description description">
-                            Aktuelle Richtlinien und Verordnungen bezüglich des Kältemittel Phase-Downs müssen
+                            Aktuelle Richtlinien und Verordnungen bezüglich des <b> Kältemittel Phase-Downs</b> müssen
                             berücksichtigt werden. Der langfristige Einsatz des Kältemittels muss sowohl nach
                             ökonomischen als auch strategischen Gesichtspunkten entschieden werden.
                         </p>
-                        <div class="standartds__description description">
+                        <div class="standards__description description">
                             Alle unsere Kältemaschinen entsprechen dem modernsten Stand der Technik und werden in den
-                            unterschiedlichsten Branchen eingesetzt. Unser Angebot umfasst ein breites Sortiment an
-                            natürlichen und frigenen Kältemitteln,
+                            unterschiedlichsten Branchen eingesetzt. Unser Angebot umfasst ein <b>breites Sortiment an
+                            natürlichen und frigenen Kältemitteln</b>,
                             die den aktuellsten Normen und Verordnungen entsprechen.
                         </div>
                     </div>
@@ -152,7 +163,7 @@
         <section class="diagramm">
             <div class="container-xl">
                 <div class="diagramm__content_wrap row">
-                    <div class="diagramm__text_wrap">
+                    <div class="diagramm__text_wrap col-lg-8 col-sm-12 gx-0">
                         <h3 class="diagramm__title title">
                             Unsere Spezialität besteht aus unseren Kaltwassersätzen mit integrierter Freikühleinheit.
                         </h3>
@@ -161,13 +172,16 @@
                             Umgebungsluft.
                         </p>
                         <p class="diagramm_description description">
-                            Nur bei heißen Außentemperaturen erfolgt die Umschaltung auf Kompressionskälteerzeugung.
-                            Diese Maximierung der Freikühlzeit erzielt größtmögliche Kosteneinsparungen
+                           <b>Nur bei heißen Außentemperaturen erfolgt die Umschaltung auf Kompressionskälteerzeugung.
+                            Diese Maximierung der Freikühlzeit erzielt größtmögliche Kosteneinsparungen</b>
                             auch bei kleinen Nennleistungen.
                         </p>
                     </div>
-                    <div class="diagramm__chart_wrap">
-                        <img src="assets/images/IconHotToCold 1.png" alt="">
+                    <div class="diagramm__chart_wrap col-lg-8 col-sm-12 gx-0">
+                        <div class="diagramm__chart_body">
+                            <div class="diagramm__chart_inner"></div>
+                            <div class="diagramm__chart_inner"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,63 +193,44 @@
                 </h2>
                 <ul class="advantages__list">
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#square"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/square.svg" alt="">
+                        <!-- Пришлось втсавить через тег img, так как спрайт почему-то не сработал, не могу понять по какой причине -->                        
                         <span>Geringe Stellfläche</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#snow"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/snow.svg" alt="">                      
                         <span>Mit und ohne integrierter Freikühlung</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#sun"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/sun.svg" alt="">                        
                         <span>Für Außentemperaturen bis +55°C</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#house"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/house.svg" alt="">                        
                         <span>Für Außen- und Innenaufstellung erhältlich</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#car"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/car.svg" alt="">                        
                         <span>Betriebsbereit bei Anlieferung</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#lamp"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/lamp.svg" alt="">                        
                         <span>Automatische Freikühlschaltung für verringerten Energieverbrauch</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#diamond"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/diamond.svg" alt="">                        
                         <span>Robustes Gehäuse für Außenaufstellung</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#speaker"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/speaker.svg" alt="">                        
                         <span>Geringe Schallemissionen</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#cloud"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/cloud.svg" alt="">                        
                         <span>Wetterfest und Langlebig</span>
                     </li>
                     <li class="advantages__item">
-                        <svg>
-                            <use xlink:href="assets/svg/sprite.svg#shield"></use>
-                        </svg>
+                        <img class="advantages__svg_icon" src="assets/svg/shield.svg" alt="">                        
                         <span>Erhöhte Betriebssicherheit</span>
                     </li>
                 </ul>
@@ -243,63 +238,65 @@
         </section>
         <section class="features">
             <div class="container-xl">
-                <h2 class="features__title title2">
-                    HAUPTMERKMALE
-                </h2>
                 <div class="features__list_wrap">
-                    <ol class="features__list--first">
-                        <li class="features__item">
-                            25 verschiedene Modelle von 6 kW bis 600 kW Kühlleistung
-                        </li>
-                        <li class="features__item">
-                            Volumenströme von 1,5 m³/h bis 140 m³/h
-                        </li>
-                        <li class="features__item">
-                            Auswahl aus 50 verschiedenen Prozesspumpen im Hochfluss-
-                            und Hochdruckbereich
-                        </li>
-                        <li class="features__item">
-                            Kompakteinheiten mit integrierten Pumpen, Drucktanks, Filtern,
-                            Steuerungen (optional mit Reservepumpe)
-                        </li>
-                        <li class="features__item">
-                            Mikrochannel Verflüssiger für höchste Energieeffizienz
-                        </li>
-                        <li class="features__item">
-                            Mit optionalen Kompressor Schallschutzummantelungen
-                        </li>
-                        <li class="features__item">
-                            Schallmindernde Ventilatortechnik erhältlich
-                        </li>                        
-                    </ol>
-                    <ol class="features__list--second">
-                        <li class="features__item">
-                            Scroll, Multiscroll und Schraubenkompressoren (optional
-                            mit Frequenzumrichter) erhältlich
-                        </li>
-                        <li class="features__item">
-                            Automatische Leistungssteuerung für Prozesse mit
-                            variabler Kühllast
-                        </li>
-                        <li class="features__item">
-                            Kleine Kältemittelvolumen dank extrakompakter
-                            Bauweise
-                        </li>
-                        <li class="features__item">
-                            Auswahl aus verschiedenen Low-GWP Kältemitteln, u.a.
-                            R513a, R1234ze und R290 (Propan)
-                        </li>
-                        <li class="features__item">
-                            Mit automatischen Glykol Nachfüllsystemem
-                        </li>
-                        <li class="features__item">
-                            Mit Remote HMI
-                        </li>
-                        <li class="features__item">
-                            Erhöhte Betriebssicherheit mit bis zu 4 Kühlkreisläufen
-                            pro Maschine
-                        </li>
-                    </ol>
+                    <h2 class="features__title title2">
+                        HAUPTMERKMALE
+                    </h2>
+                    <div class="features__list_container">
+                        <ol class="features__list features__list--first">
+                            <li class="features__item">
+                                25 verschiedene Modelle von <strong> 6 kW bis 600 kW </strong>Kühlleistung
+                            </li>
+                            <li class="features__item">
+                                Volumenströme von<strong>1,5 m³/h bis 140 m³/h</strong>
+                            </li>
+                            <li class="features__item">
+                                Auswahl aus<strong> 50 verschiedenen Prozesspumpen</strong> im Hochfluss-
+                                und Hochdruckbereich
+                            </li>
+                            <li class="features__item">
+                                Kompakteinheiten mit<strong> integrierten Pumpen, Drucktanks, Filtern,
+                                Steuerungen</strong> (optional mit Reservepumpe)
+                            </li>
+                            <li class="features__item">
+                                <strong>Mikrochannel Verflüssiger</strong> für höchste Energieeffizienz
+                            </li>
+                            <li class="features__item">
+                                Mit optionalen<strong> Kompressor Schallschutzummantelungen</strong>
+                            </li>
+                            <li class="features__item">
+                               <strong> Schallmindernde Ventilatortechnik</strong> erhältlich
+                            </li>                        
+                        </ol>
+                        <ol class="features__list features__list--second">
+                            <li class="features__item">
+                               <strong>Scroll, Multiscroll</strong>und <strong>Schraubenkompressoren</strong> (optional
+                                mit Frequenzumrichter) erhältlich
+                            </li>
+                            <li class="features__item">
+                                <strong>Automatische Leistungssteuerung</strong> für Prozesse mit
+                                variabler Kühllast
+                            </li>
+                            <li class="features__item">
+                                <strong>Kleine Kältemittelvolumen</strong> dank extrakompakter
+                                Bauweise
+                            </li>
+                            <li class="features__item">
+                                Auswahl aus <strong>verschiedenen Low-GWP Kältemitteln, u.a.
+                                R513a, R1234ze und R290 (Propan)</strong>
+                            </li>
+                            <li class="features__item">
+                                Mit <strong>automatischen Glykol Nachfüllsystemem</strong>
+                            </li>
+                            <li class="features__item">
+                                Mit <strong>Remote HMI</strong>
+                            </li>
+                            <li class="features__item">
+                                <strong>Erhöhte Betriebssicherheit mit bis zu 4 Kühlkreisläufen</strong>
+                                pro Maschine
+                            </li>
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
@@ -309,7 +306,19 @@
                     BILDER
                 </h2>
                 <div class="slider__slider_wrap">
-
+                    <ul id="lightSlider">
+                        <li>
+                            <img src="assets/images/asv4sabu 1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/images/asv4sabu 1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="assets/images/asv4sabu 1.png" alt="">
+                        </li>
+                    </ul>
+                    <span class="slider__prev" id="prevSlide"></span>
+                    <span class="slider__next" id="nextSlide"></span>
                 </div>
                 <div class="slider__list_wrap">
                     <h2 class="slider__list_title title2">
@@ -338,6 +347,9 @@
         <section class="contact">
             <div class="container-xl">
                 <div class="contact__content_wrap">
+                    <div class="contact__image_wrap contact__image_wrap--hidden">
+                        <img src="assets/images/Logo3black 3.png" alt="logo">
+                    </div>
                     <h2 class="contact__title">
                         Jetzt Termin vereinbaren!
                     </h2>
@@ -351,9 +363,9 @@
                             Fragen Sie nach einem Rückruf oder kontaktieren Sie uns unter: 
                             <a href="####">info@elsasser-technik.de</a>
                         </p>
-                        <a href="#">Kintakt</a>
+                        <a class="contact__button" href="#"><span>&#8594;</span>Kontakt</a> <!-- За стрелку прошу прощения, у меня уже не хватило сил её сверстать, а вставлять изобрадение - это кощунство:) -->
                     </div>
-                    <div class="contact__image_wrap">
+                    <div class="contact__image_wrap contact__image_wrap--visible">
                         <img src="assets/images/Logo3black 3.png" alt="logo">
                     </div>
                 </div>
@@ -362,20 +374,62 @@
     </main>
     <footer class="footer">
         <div class="container-xl">
-            <div class="footer__content_wrap row">
-                <div class="col-3">
-                    
+            <div class="footer__content_wrap row justify-content-between">
+                <div class="col-lg-3 col-md-6 col-sm-12 footer__content_inner">
+                    <h5 class="footer__subtitle">
+                        Elsässer Kältetechnik
+                    </h5>
+                    <a class="footer__link footer__link--adress" href="https://goo.gl/maps/VL5DeV3q1YQbq5eN9" target="_blank"
+                        rel="noreferrer noopener nofollow">
+                        Königsallee 14
+                        40212 Düsseldorf
+                    </a>
                 </div>
-                <div class="col-4">
-
+                <div class="col-lg-4 col-md-6 col-sm-12 footer__content_inner">
+                    <h5 class="footer__subtitle">
+                        Kontakt
+                    </h5>
+                    <div class="footer__link">
+                        Telefon: <a class="tel" href="tel:+49021192323052">+49 (0) 211 9232 3052</a>
+                    </div>
+                    <div class="footer__link">
+                        E-Mail: <a href="mailto:info@elsasser-technik.de">info@elsasser-technik.de</a>
+                    </div>
                 </div>
-                <div class="col-5">
-
+                <div class="col-lg-5 col-md-6 col-sm-12 footer__content_inner">
+                    <h5 class="footer__subtitle">
+                        Shortlinks
+                    </h5>
+                    <ul class="footer__links_list">
+                        <li class="footer__links_item">
+                            <a href="#" class="footer__short_link footer__link">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li class="footer__links_item">
+                            <a href="#" class="footer__short_link footer__link">
+                                Rückruf vereinbaren
+                            </a>
+                        </li>
+                        <li class="footer__links_item">
+                            <a href="#" class="footer__short_link footer__link">
+                                Impressum
+                            </a>
+                        </li>
+                        <li class="footer__links_item">
+                            <a href="#" class="footer__short_link footer__link">
+                                Datenschutz
+                            </a>
+                        </li>                        
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
 
+
+    <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/plugins/lightslider.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
