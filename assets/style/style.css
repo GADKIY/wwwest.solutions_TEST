@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* noto-sans-regular - latin */
 @font-face {
   font-family: "Noto Sans";
@@ -55,6 +56,7 @@ a {
   text-decoration: none;
 }
 
+/* Времени на эту работу у меня оказалось очень мало, поэтому я ею совсем не горжусь;) */
 .title {
   font-size: 1.25rem;
   color: #1652AC;
