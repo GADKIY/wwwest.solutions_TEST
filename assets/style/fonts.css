@@ -15,7 +15,7 @@
   font-weight: 700;
   src: url("..assets/fonts/noto-sans-v21-latin-700.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("..assets/fonts/noto-sans-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("..assets/fonts/noto-sans-v21-latin-700.woff2") format("woff2"), url("..assets/fonts/noto-sans-v21-latin-700.woff") format("woff"), url("..assets/fonts/noto-sans-v21-latin-700.ttf") format("truetype"), url("..assets/fonts/noto-sans-v21-latin-700.svg#NotoSans") format("svg");
+  src: local(""), url("..assets/fonts/noto-sans-v21-latin-700.eot?#iefix") format("embedded-opentype"), url("..assets/fonts/noto-sans-v21-latin-700.woff2") format("woff2"), url("..assets/fonts/noto-sans-v21-latin-700.woff") format("woff"), url("../fonts/noto-sans-v21-latin-700.ttf") format("truetype"), url("..assets/fonts/noto-sans-v21-latin-700.svg#NotoSans") format("svg");
   /* Legacy iOS */
 }
 /* BBC */
